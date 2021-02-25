@@ -6,12 +6,12 @@ Os códigos de apoio numerados por episódio estão disponíveis no Git do proje
 Pyhton é uma linguagem de programação com muitas aplicações devido as bibliotecas criadas pela comunidade. Para instalar Python entre no link, Download Python | Python.org, sempre instale a versão mais recente do programa.
 Para instalar as bibliotecas no seu computador existem dois modos, instalar usando o terminal ou instalar colocando as pastas da biblioteca no mesmo domínio dos seus códigos.  
 
-No primeiro modo você deve abrir seu terminal(CMD), digitar no terminal o comando “pip install opencv-contrib-python”, use também “pip install caer” para funções nas partes avançadas. Caso ocorra um erro no uso do comando pip, vá até Sistema>Propriedade dos Sistema>Variáveis de Ambiente e coloque em variáveis para o usuário uma nova variável com o nome “pip” com valor “C:Users/[nome_do_ usuário]/AppData/Local/Programs/Python/[nome_da_pasta_python]/Scripts”. Você pode achar essa pasta “Scripts” e copiar o local e colar no valor da variável.
+No primeiro modo você deve abrir seu terminal(CMD), digitar no terminal o comando “pip install opencv-contrib-python”, use também “pip install caer” para funções nas partes avançadas. Caso ocorra um erro no uso do comando pip, vá até Sistema>Propriedade dos Sistema>Variáveis de Ambiente e coloque em variáveis para o usuário uma nova variável com o nome “pip” com valor “C:Users/[nome_do_ usuário]/AppData/Local/Programs/Python/[nome_da_pasta_python]/Scripts”. Você pode achar essa pasta “Scripts” e copiar o local e colar no valor da variável. É recomendado que ao instalar o Python se marque a opção "Add Python x.x to PATH" para esse tipo de erro não venha a ocorrer.
 
-## Editores de Texto
-VScode 
-Vim
-Atom
+## Editores de Texto utilizados pelos(as) contribuidores(as)
+VScode; 
+Vim;
+Atom.
 
 
 No segundo caso basta apenas baixar a biblioteca com uma pasta zip e extrair essa pasta para a mesma pasta do seus códigos, mas saiba que as importações só funcionaram nesta pasta.
@@ -19,7 +19,7 @@ No segundo caso basta apenas baixar a biblioteca com uma pasta zip e extrair ess
 # Secção 1
 ## Episódio 1 - Leitura de imagens e vídeos
 
-A leitura de imagens e vídeos com a biblioteca Open CV é feita através das funções `cv2.imread('arquivo de imagem')` e `cv2.VideroCapture('arquivo de vídeo')`. Para garantir que a mídia seja encontrada, o seu respectivo arquivo deve ter o caminho especificado.
+A leitura de imagens e vídeos com a biblioteca OpenCV é feita através das funções `cv2.imread('arquivo de imagem')` e `cv2.VideroCapture('arquivo de vídeo')`. Para garantir que a mídia seja encontrada, o seu respectivo arquivo deve ter o caminho especificado.
 A função `cv2.imshow(‘Nome de exibição’, imagem)` exibirá a imagem atribuída no segundo parâmetro da função. Por outro lado, a exibição de vídeos exige o uso da estrutura de repetição while. Esse loop deve conter as funções `.read()` para captura de cada frame do vídeo e `cv2.imshow('Nome de exibição', imagem)` para apresentá-los em sequência.
 Funções usadas:
 
@@ -55,7 +55,7 @@ Outro método, exclusivo para live videos, é definindo uma função `changeRes(
 Funções usadas:
 
 * `def rescaleFrame(frame, scale=0.75) : ...`
-  * Função o qual podemos definir para alterar a escala do video. Onde teremos como parâmetros o frame ou imagem que queremos reescalar e a escala que desejamos em relação às dimensões do frame.
+  * Função o qual podemos definir para alterar a escala do vídeo. Onde teremos como parâmetros o frame ou imagem que queremos reescalar e a escala que desejamos em relação às dimensões do frame.
 * `dst = cv.resize( src, dsize[, dst[, fx[, fy[, interpolation]]]] )`
   * A função resize redimensiona a imagem para o tamanho informado. Tendo como parâmetros obrigatórios, a imagem a ser redimensionada e as dimensões desejadas, e como opcionais a imagem de saída, fatores de escalas e o método de interpolação usado para redimensionar a imagem, sendo o INTER_LINEAR o default.
 * `def changeRes(width, height) : ...`
@@ -63,7 +63,7 @@ Funções usadas:
 
 ## Episódio 3: Desenhando formas e Inserindo textos
 
-Com o OpenCV é possível modificar imagens de diversas formas, incluindo, pintar uma parte da imagem, ou ela toda de uma cor, desenhar retângulos, círculos e linhas, e até inserir textos nas imagem.Para demonstração também usaremos a biblioteca NumPy para gerarmos uma imagem vazia. E então podemos desenhar usando as funções abaixo:
+Com o OpenCV é possível modificar imagens de diversas formas, incluindo, pintar uma parte da imagem, ou ela toda de uma cor, desenhar retângulos, círculos e linhas, e até inserir textos nas imagem. Para demonstração também usaremos a biblioteca NumPy para gerarmos uma imagem vazia. E então podemos desenhar usando as funções abaixo:
 
 * `numpy.zeros(shape, dtype=float, order='C')`
   * A função zeros, irá retornar uma array completamente preenchida por 0s. Tem como parâmetro obrigatório as dimensões do quadro que a gente deseja criar, e como optativo o tipo dos dados dentro da função e como esses dados estarão armazenados na memória.
